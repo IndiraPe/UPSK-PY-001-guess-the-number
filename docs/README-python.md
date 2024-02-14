@@ -1,4 +1,4 @@
-# Python 🐍
+# Python 🐍 :)
 
 ## 1. Preámbulo
 
