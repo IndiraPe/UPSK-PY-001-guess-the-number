@@ -1,0 +1,2 @@
+msg = "Kiraaaa"
+print(msg)
