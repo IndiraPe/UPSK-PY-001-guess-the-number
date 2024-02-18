@@ -8,12 +8,12 @@ def numRandom():
 
 """ Obtener el nombre del jugador """
 def namePlayer():
-    return input('Hola!!, ingresa tu nombre: ')
+    return input('\nHola!!, ingresa tu nombre: ')
 
 
 """ Bienvenida al jugador """
 def welcomeTheGame():
-    return print('Bienvenido(a) ' + namePlayer() + ', intenta ganarle a la computadora adivinando el número primero entre 1 - 100. Comencemos!!!\nYa tengo el número, Tu empiezas!!!')
+    return print('Bienvenido(a) ' + namePlayer() + ', intenta ganarle a la computadora adivinando el número primero entre 1 - 100. Comencemos!!!\nYa tengo el número, Tu empiezas!!!\n')
 
 
 """ Obtener el número ingresado del jugador """
@@ -32,20 +32,36 @@ def initGame():
         try: 
             numOfPlayer = obtainNumOfPlayer()
             arrNumOfPlayer.append(int(numOfPlayer))
+            computerPlayer = random.randint(1, 100)
 
             if int(numOfPlayer) == obtainNumRandom:
-                print('Felicidades!!! Venciste a la computadora')
+                print('------------------------------------------------------------------------')
+                print('Felicidades!!! Venciste a la computadora\n')
                 break
             elif int(numOfPlayer) < 0 or int(numOfPlayer) > 100:
                 print('Recuerda que solo pueden ser números entre 1 - 100!!')
             elif int(numOfPlayer) > obtainNumRandom:
-                print('Es muy alto!!')
+                print('Es muy alto!!')                
             else:
                 print('Es muy bajo!!')
+
+            print('------------------------------------------------------------------------')
+            print('Computadora: Es mi turno!! Creo que el número es: ' + str(computerPlayer))
+
+            if computerPlayer == obtainNumRandom:
+                print('------------------------------------------------------------------------')
+                print('La computadora ganó, más suerte para la próxima!!\n')
+                break
+            elif computerPlayer > obtainNumRandom:
+                print('Es muy alto!!')
+                print('------------------------------------------------------------------------\n')
+            else:
+                print('Es muy bajo!!')
+                print('------------------------------------------------------------------------\n')
         
         except:
             print('Debes ingresar solo números!!')
             
-    print(arrNumOfPlayer)
+    print('Tus intentos fueron: ', arrNumOfPlayer, ' y tu número ganador fue: ', arrNumOfPlayer[-1], '\n')
 
 initGame()
