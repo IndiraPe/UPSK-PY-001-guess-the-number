@@ -26,6 +26,7 @@ def initGame():
 
     welcomeTheGame()
     arrNumOfPlayer = []
+    arrNumOfComputer = []
     obtainNumRandom = numRandom()
 
     while True:
@@ -33,6 +34,7 @@ def initGame():
             numOfPlayer = obtainNumOfPlayer()
             arrNumOfPlayer.append(int(numOfPlayer))
             computerPlayer = random.randint(1, 100)
+            arrNumOfComputer.append(computerPlayer)
 
             if int(numOfPlayer) == obtainNumRandom:
                 print('------------------------------------------------------------------------')
@@ -62,6 +64,7 @@ def initGame():
         except:
             print('Debes ingresar solo números!!')
             
-    print('Tus intentos fueron: ', arrNumOfPlayer, ' y tu número ganador fue: ', arrNumOfPlayer[-1], '\n')
+    print('Tus intentos fueron: ', arrNumOfPlayer, '\n')
+    print('Los intentos de la computadora fueron: ', arrNumOfComputer, '\n')
 
 initGame()
