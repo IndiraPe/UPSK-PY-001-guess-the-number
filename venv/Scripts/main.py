@@ -13,18 +13,18 @@ def namePlayer():
 
 """ Bienvenida al jugador """
 def welcomeTheGame():
-    return print('Bienvenido(a) ' + namePlayer() + ', intenta ganarle a la computadora adivinando el número primero entre 1 - 100. Comencemos!!!\nYa tengo el número, Tu empiezas!!!\n')
+    print('Bienvenido(a) ' + namePlayer() + ', intenta ganarle a la computadora adivinando el número primero entre 1 - 100. Comencemos!!!\nYa tengo el número, Tu empiezas!!!\n')
+    initGame()
 
 
 """ Obtener el número ingresado del jugador """
 def obtainNumOfPlayer():       
-    return input('Adivina el número: ')
+    return input('\nAdivina el número: ')
 
 
 """ Que empiece el juego """
 def initGame():
 
-    welcomeTheGame()
     arrNumOfPlayer = []
     arrNumOfComputer = []
     obtainNumRandom = numRandom()
@@ -66,5 +66,9 @@ def initGame():
             
     print('Tus intentos fueron: ', arrNumOfPlayer, '\n')
     print('Los intentos de la computadora fueron: ', arrNumOfComputer, '\n')
+    return True
 
-initGame()
+
+
+if __name__ == "__main__":
+    welcomeTheGame()
