@@ -3,13 +3,10 @@
 ## Índice
 
 - [1. Resumen del Proyecto](#1-resumen-del-proyecto)
-- [2. Consideraciones Generales](#2-consideraciones-generales)
-- [3. Objetivos de Aprendizaje](#3-objetivos-de-aprendizaje)
+- [2. Objetivos de Aprendizaje](#2-objetivos-de-aprendizaje)
 
 ---
 
-![GUESS THE
-NUMBER](https://firebasestorage.googleapis.com/v0/b/laboratoria-945ea.appspot.com/o/guess-the-number.png?alt=media)
 
 ## 1. Resumen del Proyecto
 
@@ -18,89 +15,14 @@ donde la jugadora y el ordenador se turnan para intentar adivinar un número
 aleatorio entre 1 y 100. Deben tener en cuenta la tentativa anterior, si fue
 "muy alta" o "muy baja".
 
-![Demostración animada de sesión de juego](https://firebasestorage.googleapis.com/v0/b/laboratoria-945ea.appspot.com/o/guess-the-number-demo.gif?alt=media)
+![Demostración del juego](gamepy.jpg)
 
-## 2. Consideraciones Generales
 
-- Este proyecto debe desarrollarse de manera **individual**.
-- La estimación de tiempo para completar el proyecto es de 1 a 2 Sprints.
-- Concéntrate en adquirir conocimientos en lugar de simplemente "terminar" el
-  proyecto.
-- Ten paciencia. No te preocupes demasiado por lo que aún no entiendes
-  completamente.
-- Tu aprendizaje se desarrollará a medida que progreses.
-
-### **Criterios de Aceptación Mínimos del Proyecto**
-
-- La jugadora y el ordenador se turnarán en turnos para intentar adivinar el
-  número.
-- Después de cada tentativa, se debe mostrar:
-  * El nombre del jugador (persona o computadora).
-  * La suposición realizada.
-  * Un mensaje indicando si la suposición fue muy alta, muy baja o correcta.
-- El juego terminará tan pronto como la jugadora o el ordenador adivine el
-  número secreto. Debe mostrarse un mensaje de fin de juego, así como una lista
-  de todas las tentativas realizadas por la jugadora ganadora.
-
-**_¡Diviértete construyendo tu juego de adivinanza de números! 🎲🎮_**
-
-- [Versión en Python](./docs/README-python.md)
-- [Versión en Java](./docs/README-java.md)
-
-## 3. Objetivos de Aprendizaje
+## 2. Objetivos de Aprendizaje
 
 
 Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en tu proyecto. Piensa en eso al decidir tu estrategia de trabajo.
 
-### Java
-
-- [ ] **Modificadores de acesso (public, private, protected)**
-
-- [ ] **Uso de condicionales**
-
-- [ ] **Uso de bucles (Loops)**
-
-#### Tipos de data
-
-- [ ] **Datos primitivos vs no primitivos**
-
-- [ ] **Cadenas**
-
-- [ ] **Arreglos**
-
-#### Colecciones
-
-- [ ] **ArrayList**
-
-#### Testing
-
-- [ ] **JUnit**
-
-- [ ] **Mockito**
-
-### Programación Orientada a Objetos (OOP)
-
-- [ ] **Clases**
-
-- [ ] **Objetos**
-
-- [ ] **Métodos**
-
-- [ ] **Atributos**
-
-- [ ] **Constructores**
-
-- [ ] **Encapsulamiento**
-
-- [ ] **Abstracción**
-
-- [ ] **Composición**
-
-- [ ] **Interfaces**
-
-- [ ] **Herencia (super, extends, override)**
-
-- [ ] **Lenguaje de Modelado Unificado (UML, class diagrams)**
 
 ### Python
 
