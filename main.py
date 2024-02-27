@@ -19,7 +19,7 @@ def welcomeTheGame():
 
 """ Obtener el número ingresado del jugador """
 def obtainNumOfPlayer():       
-    return input('\nAdivina el número: ')
+    return input('Adivina el número: ')
 
 
 """ Que empiece el juego """
